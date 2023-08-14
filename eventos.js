@@ -1,5 +1,10 @@
-let btn =  document.querySelector("div");
+let div = document.querySelector("div");
+let boton = document.getElementById("btn");
 
-btn.addEventListener("click", function(){
+div.addEventListener("click", function() {
     alert("Hola! Soy el div");
+});
+
+boton.addEventListener("click", function(event) {
+   event.stopPropagation();
 });
